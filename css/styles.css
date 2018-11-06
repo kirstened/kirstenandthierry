@@ -1,0 +1,543 @@
+@font-face {
+    font-family: "Afta";
+    src: url("../fonts/AftaSerifThin-Regular.otf");
+}
+
+@font-face {
+    font-family: "Georgia";
+    src: url("../fonts/GeorgiaScript.otf");
+}
+
+body {
+    font-family: "Afta", sans-serif;
+    letter-spacing: 3px;
+    line-height: 1;
+    color:#000000;
+}
+
+a {
+    color: #000000;
+    text-decoration:underline;
+}
+
+a:hover {
+    color: #000000;
+}
+
+
+/************************************************************
+ * Default Styling
+ ************************************************************/
+
+body {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+h1 {
+    font-size: 90px;
+    line-height: 94px;
+    font-family: "Afta";
+    color: #000000;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 62px;
+    line-height: 66px;
+    margin: 30px 0 40px 0;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+h4 {
+    margin: 35px 0 25px 0;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 13px;
+    line-height: 27px;
+    margin: 20px 0;
+}
+
+hr  {
+    margin: 30px 0;
+}
+
+.padding-top {
+    padding-top:15px;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 52px;
+        line-height: 56px;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 28px;
+        margin: 20px 0 15px 0;
+    }
+
+    h3 {
+        font-size: 23px;
+        line-height: 26px;
+        margin: 10px 0 5px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+        line-height: 39px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 23px;
+        margin: 5px 0;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 21px;
+        margin: 5px 0;
+    }
+}
+
+
+.panel {
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+.panel-default {
+    border-color: #eee;
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-rsvp {
+    align-content: center;
+    background-color: #9e894a;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 15px;
+    margin: 0;
+    width: 200px;
+    border:none;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.btn-rsvp:hover, .btn-rsvp:focus {
+    background-color: #5f6060 !important;
+    color: #fff;
+}
+
+.btn-thanks {
+    align-content: center;
+    border:1px solid #9e894a;
+    color: #9e894a;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 15px;
+    margin: 10px 0 0 0;
+    width: 200px;
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.btn-thanks:hover, .btn-thanks:focus {
+    border: 1px solid #5f6060 !important;
+    color: #5f6060;
+}
+
+.form-control {
+    border-radius: 0;
+    height:40px;
+    color: #5f6060;
+    box-shadow: none;
+}
+
+.help-block {
+    margin: 25px 0;
+}
+
+.radio input[type="radio"]:focus + label::before {
+    outline: none;
+}
+
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #5f6060;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+
+label {
+    text-transform: uppercase;
+}
+
+.form-group label {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.form-group-new label {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.form-control-new {
+    width:300px;
+    border-radius: 0;
+    height:40px;
+    color: #5f6060;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #5f6060;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+
+.checkbox-rsvp input[type="checkbox"]:checked + label::before,
+.checkbox-rsvp input[type="radio"]:checked + label::before {
+    border-color: #9e894a;
+}
+
+.checkbox label {
+    text-transform:none;
+}
+
+.checkbox label::before {
+    width: 27px;
+    height: 27px;
+    border-radius: 0;
+}
+
+.checkbox label::after {
+    width: 11px;
+    height: 11px;
+    left: 1px;
+    top: 1px;
+    font-size: 20px;
+    color: #9e894a;
+}
+
+.radio label::before {
+    width: 27px;
+    height: 27px;
+}
+.radio label::after {
+    width: 11px;
+    height: 11px;
+    left: 8px;
+    top: 8px;
+}
+
+.radio label {
+    padding-left: 20px;
+    line-height: 25px;
+    text-transform: none;
+}
+
+.checkbox label {
+    padding-left: 20px;
+    line-height: 25px;
+}
+
+.radio-rsvp input[type="radio"] + label::after {
+    background-color: #9e894a;
+}
+.radio-rsvp input[type="radio"]:checked + label::before {
+    border-color: #9e894a;
+}
+.radio-rsvp input[type="radio"]:checked + label::after {
+    background-color: #9e894a;
+}
+
+/************************************************************
+ * Page
+ ************************************************************/
+
+html, body {
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+.container-content {
+    flex: 1;
+}
+
+/************************************************************
+ * Header & Navigation
+ ************************************************************/
+
+.navbar-default {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0px;
+    border-radius: 0;
+    z-index: 0;
+}
+
+.navbar > .container-fluid .navbar-brand, .navbar-default a {
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px 10px;
+    display: block;
+    line-height: 20px;
+    border: 1px solid transparent;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default a.navbar-brand {
+    color: #000000;
+}
+
+
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+
+}
+
+.navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #9e894a;
+}
+
+.navbar-collapse {
+    border: none;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        background: #fff;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar > .container-fluid .navbar-brand, .navbar-default a {
+        margin: 10px 10px;
+    }
+}
+
+/************************************************************
+ * Hero Image
+ ************************************************************/
+
+.hero {
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.index .hero {
+    height: 330px;
+}
+
+.index .hero {
+    background-image: url("../images/index-hero.jpg");
+    background-position: center center;
+}
+
+
+.notfound .hero {
+    background-image: url("../images/index-hero.jpg");
+    background-position: center top;
+}
+
+@media screen and (max-width: 800px) {
+    .hero {
+        height: 175px;
+    }
+
+    .index .hero {
+        height: 380px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        height: 190px;
+    }
+
+    .index .hero {
+        height: 175px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .hero {
+        height: 190px;
+    }
+
+    .index .hero {
+        height: 180px;
+        background-position: center -10px;
+    }
+}
+
+/************************************************************
+ * Content
+ ************************************************************/
+
+.container-content {
+    margin-top: 360px;
+    width:1025px;
+}
+
+.index .container-content {
+    margin-top:385px;
+}
+
+@media screen and (max-width: 800px) {
+    .container-content {
+        margin-top: 5px;
+        width:auto;
+    }
+
+    .index .container-content {
+        margin-top: 400px;
+        width:auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-content {
+        margin-top: 5px;
+        width:auto;
+    }
+
+    .index .container-content {
+        margin-top: 185px;
+        width:auto;
+    }
+}
+
+/************************************************************
+ * Footer
+ ************************************************************/
+
+footer {
+    width: 100%;
+    background-color: #000000;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer, footer a {
+    color: #aaa;
+}
+
+@media screen and (min-width: 768px) {
+    footer h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    footer h5 {
+        margin-bottom: 5px;
+    }
+}
+
+/************************************************************
+ * Index Page
+ ************************************************************/
+
+.index h1 {
+    font-size: 160px;
+    line-height: 170px;
+    margin: 0 0 50px 0;
+    font-family:"Georgia";
+    text-transform: none;
+}
+
+.index hr {
+    margin: 60px auto;
+    width: 50%;
+}
+
+.index time {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 30px 0 50px 0;
+    color: #3f3f3f;
+}
+
+@media screen and (max-width: 800px) {
+    .index h1 {
+        font-size: 125px;
+        line-height: 130px;
+    }
+
+    .index hr {
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .index h1 {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .index hr {
+        margin: 40px auto;
+    }
+}
+
